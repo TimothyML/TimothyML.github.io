@@ -1,10 +1,110 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Timothy Lee | Portfolio</title>
+  <meta name="description" content="Portfolio of Timothy Lee - projects, experience, and contact." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
 <body>
-<h1>Hello, World!</h1>
-<p>My name is Timothy Lee and this is my portfolio website</p>
-</body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#top">Timothy Lee</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-<p></p>Tutoring Website</p>
-<div style="width:900px;margin:0 auto;"><div style="text-align:right"><span style="font:9px/14px arial;color:#3d3d3d;">Powered By <a target="_blank" id="vt_link" rel="nofollow" href="http://www.varsitytutors.com/tutors/880281235">Varsity Tutors</a></span></div><iframe id="vt_content_frame" allowtransparency="true" style="height:900px; width:900px" frameborder="0" src="//widgets.varsitytutors.com/tutors/880281235?vt_theme=vt2"></iframe></div>
+  <main id="top" class="container">
+    <section class="hero">
+      <div>
+        <h1>Electrical Engineering Student | RF • Imaging • IC Design </h1>
+        <p>
+          I build real systems across RF, chip design automation, and signal processing.
+          Here are a few projects and results.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn-outline" href="assets/Your_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        </div>
+        <p class="meta">
+          Texas A&M • Graduating May 2026 • <a href="mailto:tlee04@tamu.edu">tlee04@tamu.edu</a> •
+          <a href="https://www.linkedin.com/in/timothy-lee-a31528253" target="_blank" rel="noreferrer">LinkedIn</a> •
+          <a href="https://github.com/TimothyML" target="_blank" rel="noreferrer">GitHub</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>LLM-Driven Chip Design Pipeline</h3>
+          <p>Automated RTL → Yosys → OpenROAD P&R → OpenSTA timing reports with Python orchestration.</p>
+          <ul>
+            <li>Focus: P&R / STA subsystem lead</li>
+            <li>Outputs: WNS/TNS, area, power, DRC summaries</li>
+          </ul>
+          <div class="links">
+            <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="#" target="_blank" rel="noreferrer">Write-up</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>MRI / FFT Image Reconstruction</h3>
+          <p>Built sequences + reconstructed images using 2D FFT, windowing, and filtering.</p>
+          <div class="links">
+            <a href="#" target="_blank" rel="noreferrer">Report</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="item">
+          <h3>Varsity Tutors — Tutor</h3>
+          <p class="muted">Dates • Subjects</p>
+          <ul>
+            <li>Taught math/engineering topics, improved student performance with structured sessions.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Research / Lab / Leadership (optional)</h3>
+          <p class="muted">Dates • Focus</p>
+          <ul>
+            <li>Add measurable impact bullets (speedups, accuracy, performance, etc.).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I’m an EE senior at Texas A&M (May 2026) focused on RF systems, chip design automation,
+        and biomedical imaging. I like building end-to-end pipelines and validating results with
+        clean measurements and reports.
+      </p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email is best: <a href="mailto:tlee04@tamu.edu">tlee04@tamu.edu</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Timothy Lee</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
