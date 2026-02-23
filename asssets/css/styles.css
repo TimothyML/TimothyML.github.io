@@ -98,3 +98,34 @@ a:hover { text-decoration: underline; }
   text-align: center;
   color: var(--muted);
 }
+
+:root{
+  --bg: #ffffff;
+  --text: #111111;
+  --card: #f4f4f5;
+  --border: #e4e4e7;
+  --link: #2563eb;
+}
+
+/* When dark mode is enabled */
+body.dark{
+  --bg: #0b0f19;
+  --text: #e5e7eb;
+  --card: #111827;
+  --border: #1f2937;
+  --link: #60a5fa;
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+}
+
+a{ color: var(--link); }
+
+.card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
